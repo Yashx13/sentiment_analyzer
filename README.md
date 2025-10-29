@@ -22,12 +22,12 @@ A Streamlit-based dashboard that analyzes product reviews using sentiment analys
 
 **Windows (PowerShell):**
 ```bash
-    .psenv\Scripts\Activate.ps1
+    .psenv/Scripts/Activate.ps1
 ```
 
 **Windows (Command Prompt):**
 ```bash
-    .psenv\Scripts\activate.bat
+    .psenv/Scripts/activate.bat
 ```
 
 **Linux/macOS:**
@@ -58,4 +58,5 @@ sentiment_analyzer/
 │       └── product_reviews.csv
 ├── requirements.txt    # dependencies 
 └── README.md
+
 ```
