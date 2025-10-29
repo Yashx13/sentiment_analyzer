@@ -9,8 +9,8 @@ def get_analyzer():
 @st.cache_data
 def load_data():
     try:
-        products = pd.read_csv("products_updated.csv")
-        reviews = pd.read_csv("reviews.csv")
+        products = pd.read_csv("main/csv/products.csv")
+        reviews = pd.read_csv("main/csv/product_reviews.csv")
         return products, reviews
     except FileNotFoundError as e:
         st.error(f"❌ Data file not found: {e}")

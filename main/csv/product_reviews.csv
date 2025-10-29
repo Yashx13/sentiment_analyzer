@@ -1,0 +1,245 @@
+review_id,product_id,review_text,rating
+R0001,P001,"This Aurora works fine, but I wish the display was a bit better. It could have been cheaper, but overall it's okay.",5
+R0002,P001,"This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. It could have been cheaper, but overall it's okay.",5
+R0003,P001,The Aurora exceeded all my expectations. The charging speed is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0004,P001,"Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0005,P001,"Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0006,P001,Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. Delivery was fast and packaging was neat.,5
+R0007,P001,"I was really disappointed with this Aurora. The fit stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0008,P001,The Aurora exceeded all my expectations. The design is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0009,P001,Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. I appreciate the modern design and easy setup.,5
+R0010,P001,Would not recommend this Aurora. It broke sooner than expected and caused a lot of frustration. I appreciate the modern design and easy setup.,2
+R0011,P001,The Aurora exceeded all my expectations. The display is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0012,P001,"This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. It could have been cheaper, but overall it's okay.",5
+R0013,P001,The Aurora exceeded all my expectations. The design is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0014,P001,Neither great nor terrible. The Aurora performs as advertised. I appreciate the modern design and easy setup.,3
+R0015,P001,The Aurora exceeded all my expectations. The durability is amazing and battery lasts really long. Delivery was fast and packaging was neat.,5
+R0016,P001,Fantastic quality for the price. The Aurora feels premium and design works flawlessly. Delivery was fast and packaging was neat.,5
+R0017,P001,"An average experience overall. The comfort could use some improvement, but it's acceptable. It could have been cheaper, but overall it's okay.",5
+R0018,P001,"It's a decent Aurora for the price. Nothing extraordinary, but it gets the job done. After using it for two weeks, I can say it holds up well.",4
+R0019,P001,"The Aurora is okay, nothing too special. It does what it's supposed to do. Delivery was fast and packaging was neat.",4
+R0020,P001,"The Aurora exceeded all my expectations. The brightness is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",5
+R0021,P001,This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0022,P001,"The Aurora is okay, nothing too special. It does what it's supposed to do. It could have been cheaper, but overall it's okay.",4
+R0023,P001,Neither great nor terrible. The Aurora performs as advertised. Customer support experience was fine overall.,2
+R0024,P001,Fantastic quality for the price. The Aurora feels premium and brightness works flawlessly. I appreciate the modern design and easy setup.,5
+R0025,P001,Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. I appreciate the modern design and easy setup.,5
+R0026,P001,This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0027,P001,The Aurora exceeded all my expectations. The design is amazing and battery lasts really long. Delivery was fast and packaging was neat.,5
+R0028,P001,"Fantastic quality for the price. The Aurora feels premium and brightness works flawlessly. After using it for two weeks, I can say it holds up well.",5
+R0029,P001,"I absolutely love this Aurora! The fit is outstanding and it performs even better than expected. After using it for two weeks, I can say it holds up well.",5
+R0030,P001,I absolutely love this Aurora! The material quality is outstanding and it performs even better than expected. I appreciate the modern design and easy setup.,5
+R0031,P001,This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0032,P001,Terrible experience. The material quality is unreliable and customer support wasn't helpful. I appreciate the modern design and easy setup.,2
+R0033,P001,Highly recommend this Aurora to anyone looking for something reliable and stylish. Totally worth the money. I appreciate the modern design and easy setup.,5
+R0034,P001,This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. I appreciate the modern design and easy setup.,5
+R0035,P001,The Aurora exceeded all my expectations. The comfort is amazing and battery lasts really long. Customer support experience was fine overall.,5
+R0036,P001,This Aurora has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0037,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. Customer support experience was fine overall.",4
+R0038,P002,"Terrible experience. The charging speed is unreliable and customer support wasn't helpful. It could have been cheaper, but overall it's okay.",3
+R0039,P002,Extremely poor performance. The Nimbus overheats and doesn't last long. I appreciate the modern design and easy setup.,4
+R0040,P002,I absolutely love this Nimbus! The brightness is outstanding and it performs even better than expected. Customer support experience was fine overall.,5
+R0041,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. I appreciate the modern design and easy setup.",5
+R0042,P002,"This Nimbus works fine, but I wish the brightness was a bit better. Delivery was fast and packaging was neat.",5
+R0043,P002,Extremely poor performance. The Nimbus overheats and doesn't last long. Customer support experience was fine overall.,3
+R0044,P002,"This Nimbus has become one of my favorite purchases this year. I use it daily and it never disappoints. It could have been cheaper, but overall it's okay.",5
+R0045,P002,"An average experience overall. The sound quality could use some improvement, but it's acceptable. It could have been cheaper, but overall it's okay.",5
+R0046,P002,I was really disappointed with this Nimbus. The design stopped working after a few days. Delivery was fast and packaging was neat.,2
+R0047,P002,"Highly recommend this Nimbus to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0048,P002,"I absolutely love this Nimbus! The material quality is outstanding and it performs even better than expected. It could have been cheaper, but overall it's okay.",5
+R0049,P002,"This Nimbus works fine, but I wish the battery life was a bit better. After using it for two weeks, I can say it holds up well.",5
+R0050,P002,Poor build quality. The Nimbus feels cheap and doesn't justify its price at all. Delivery was fast and packaging was neat.,3
+R0051,P002,I absolutely love this Nimbus! The material quality is outstanding and it performs even better than expected. I appreciate the modern design and easy setup.,5
+R0052,P002,Extremely poor performance. The Nimbus overheats and doesn't last long. Customer support experience was fine overall.,3
+R0053,P002,I was really disappointed with this Nimbus. The brightness stopped working after a few days. Customer support experience was fine overall.,4
+R0054,P002,"An average experience overall. The durability could use some improvement, but it's acceptable. It could have been cheaper, but overall it's okay.",5
+R0055,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. After using it for two weeks, I can say it holds up well.",3
+R0056,P002,"I was really disappointed with this Nimbus. The design stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0057,P002,"It's a decent Nimbus for the price. Nothing extraordinary, but it gets the job done. Customer support experience was fine overall.",5
+R0058,P002,Neither great nor terrible. The Nimbus performs as advertised. I appreciate the modern design and easy setup.,3
+R0059,P002,Terrible experience. The comfort is unreliable and customer support wasn't helpful. I appreciate the modern design and easy setup.,3
+R0060,P002,Fantastic quality for the price. The Nimbus feels premium and battery life works flawlessly. Delivery was fast and packaging was neat.,5
+R0061,P002,Highly recommend this Nimbus to anyone looking for something reliable and stylish. Totally worth the money. Delivery was fast and packaging was neat.,5
+R0062,P002,This Nimbus has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0063,P002,Neither great nor terrible. The Nimbus performs as advertised. I appreciate the modern design and easy setup.,3
+R0064,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. Delivery was fast and packaging was neat.",4
+R0065,P002,"Fantastic quality for the price. The Nimbus feels premium and material quality works flawlessly. It could have been cheaper, but overall it's okay.",5
+R0066,P002,I was really disappointed with this Nimbus. The brightness stopped working after a few days. I appreciate the modern design and easy setup.,4
+R0067,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. I appreciate the modern design and easy setup.",5
+R0068,P002,"This Nimbus has become one of my favorite purchases this year. I use it daily and it never disappoints. It could have been cheaper, but overall it's okay.",5
+R0069,P002,Extremely poor performance. The Nimbus overheats and doesn't last long. Customer support experience was fine overall.,3
+R0070,P002,The Nimbus exceeded all my expectations. The brightness is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0071,P002,"Highly recommend this Nimbus to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0072,P002,The Nimbus exceeded all my expectations. The battery life is amazing and battery lasts really long. Delivery was fast and packaging was neat.,5
+R0073,P002,Terrible experience. The display is unreliable and customer support wasn't helpful. I appreciate the modern design and easy setup.,2
+R0074,P002,This Nimbus has become one of my favorite purchases this year. I use it daily and it never disappoints. I appreciate the modern design and easy setup.,5
+R0075,P002,Neither great nor terrible. The Nimbus performs as advertised. I appreciate the modern design and easy setup.,3
+R0076,P002,"The Nimbus exceeded all my expectations. The material quality is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",4
+R0077,P002,"I was really disappointed with this Nimbus. The display stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0078,P002,"An average experience overall. The fit could use some improvement, but it's acceptable. After using it for two weeks, I can say it holds up well.",5
+R0079,P002,Neither great nor terrible. The Nimbus performs as advertised. I appreciate the modern design and easy setup.,3
+R0080,P002,"Extremely poor performance. The Nimbus overheats and doesn't last long. It could have been cheaper, but overall it's okay.",3
+R0081,P002,"The Nimbus is okay, nothing too special. It does what it's supposed to do. After using it for two weeks, I can say it holds up well.",3
+R0082,P003,"Poor build quality. The Lumen feels cheap and doesn't justify its price at all. After using it for two weeks, I can say it holds up well.",2
+R0083,P003,Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. Customer support experience was fine overall.,2
+R0084,P003,"It's a decent Lumen for the price. Nothing extraordinary, but it gets the job done. After using it for two weeks, I can say it holds up well.",4
+R0085,P003,"Terrible experience. The charging speed is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",3
+R0086,P003,I was really disappointed with this Lumen. The comfort stopped working after a few days. Customer support experience was fine overall.,3
+R0087,P003,Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. I appreciate the modern design and easy setup.,2
+R0088,P003,"Extremely poor performance. The Lumen overheats and doesn't last long. After using it for two weeks, I can say it holds up well.",2
+R0089,P003,Extremely poor performance. The Lumen overheats and doesn't last long. I appreciate the modern design and easy setup.,4
+R0090,P003,"Terrible experience. The comfort is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",4
+R0091,P003,Extremely poor performance. The Lumen overheats and doesn't last long. Customer support experience was fine overall.,3
+R0092,P003,"Terrible experience. The battery life is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",3
+R0093,P003,"Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. It could have been cheaper, but overall it's okay.",2
+R0094,P003,I was really disappointed with this Lumen. The battery life stopped working after a few days. Customer support experience was fine overall.,2
+R0095,P003,"I was really disappointed with this Lumen. The battery life stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0096,P003,Extremely poor performance. The Lumen overheats and doesn't last long. Delivery was fast and packaging was neat.,3
+R0097,P003,"Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. It could have been cheaper, but overall it's okay.",2
+R0098,P003,"Extremely poor performance. The Lumen overheats and doesn't last long. It could have been cheaper, but overall it's okay.",3
+R0099,P003,"Terrible experience. The sound quality is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",3
+R0100,P003,"It's a decent Lumen for the price. Nothing extraordinary, but it gets the job done. After using it for two weeks, I can say it holds up well.",4
+R0101,P003,Poor build quality. The Lumen feels cheap and doesn't justify its price at all. I appreciate the modern design and easy setup.,4
+R0102,P003,"I absolutely love this Lumen! The durability is outstanding and it performs even better than expected. It could have been cheaper, but overall it's okay.",5
+R0103,P003,Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. I appreciate the modern design and easy setup.,2
+R0104,P003,Extremely poor performance. The Lumen overheats and doesn't last long. Delivery was fast and packaging was neat.,3
+R0105,P003,"Terrible experience. The fit is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",4
+R0106,P003,I was really disappointed with this Lumen. The durability stopped working after a few days. Customer support experience was fine overall.,2
+R0107,P003,"Neither great nor terrible. The Lumen performs as advertised. It could have been cheaper, but overall it's okay.",3
+R0108,P003,"Extremely poor performance. The Lumen overheats and doesn't last long. It could have been cheaper, but overall it's okay.",3
+R0109,P003,"Extremely poor performance. The Lumen overheats and doesn't last long. After using it for two weeks, I can say it holds up well.",2
+R0110,P003,Poor build quality. The Lumen feels cheap and doesn't justify its price at all. Delivery was fast and packaging was neat.,3
+R0111,P003,"This Lumen works fine, but I wish the brightness was a bit better. Customer support experience was fine overall.",5
+R0112,P003,"Poor build quality. The Lumen feels cheap and doesn't justify its price at all. After using it for two weeks, I can say it holds up well.",2
+R0113,P003,Terrible experience. The comfort is unreliable and customer support wasn't helpful. Customer support experience was fine overall.,3
+R0114,P003,Extremely poor performance. The Lumen overheats and doesn't last long. Customer support experience was fine overall.,3
+R0115,P003,"It's a decent Lumen for the price. Nothing extraordinary, but it gets the job done. Delivery was fast and packaging was neat.",5
+R0116,P003,"The Lumen is okay, nothing too special. It does what it's supposed to do. Delivery was fast and packaging was neat.",4
+R0117,P003,"Extremely poor performance. The Lumen overheats and doesn't last long. After using it for two weeks, I can say it holds up well.",2
+R0118,P003,Extremely poor performance. The Lumen overheats and doesn't last long. Customer support experience was fine overall.,3
+R0119,P003,Extremely poor performance. The Lumen overheats and doesn't last long. I appreciate the modern design and easy setup.,4
+R0120,P003,Terrible experience. The battery life is unreliable and customer support wasn't helpful. Customer support experience was fine overall.,2
+R0121,P003,Poor build quality. The Lumen feels cheap and doesn't justify its price at all. Customer support experience was fine overall.,3
+R0122,P003,"Terrible experience. The display is unreliable and customer support wasn't helpful. After using it for two weeks, I can say it holds up well.",3
+R0123,P003,Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. I appreciate the modern design and easy setup.,2
+R0124,P003,Neither great nor terrible. The Lumen performs as advertised. I appreciate the modern design and easy setup.,3
+R0125,P003,"Would not recommend this Lumen. It broke sooner than expected and caused a lot of frustration. After using it for two weeks, I can say it holds up well.",1
+R0126,P003,"The Lumen is okay, nothing too special. It does what it's supposed to do. Customer support experience was fine overall.",4
+R0127,P003,"I was really disappointed with this Lumen. The sound quality stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0128,P004,"I absolutely love this Haven! The sound quality is outstanding and it performs even better than expected. After using it for two weeks, I can say it holds up well.",5
+R0129,P004,"Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0130,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. Delivery was fast and packaging was neat.,5
+R0131,P004,The Haven exceeded all my expectations. The charging speed is amazing and battery lasts really long. Customer support experience was fine overall.,5
+R0132,P004,"Poor build quality. The Haven feels cheap and doesn't justify its price at all. It could have been cheaper, but overall it's okay.",3
+R0133,P004,"I absolutely love this Haven! The design is outstanding and it performs even better than expected. It could have been cheaper, but overall it's okay.",5
+R0134,P004,"Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. It could have been cheaper, but overall it's okay.",4
+R0135,P004,I absolutely love this Haven! The charging speed is outstanding and it performs even better than expected. Customer support experience was fine overall.,5
+R0136,P004,"The Haven exceeded all my expectations. The charging speed is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",4
+R0137,P004,"This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. After using it for two weeks, I can say it holds up well.",5
+R0138,P004,Fantastic quality for the price. The Haven feels premium and battery life works flawlessly. Customer support experience was fine overall.,5
+R0139,P004,"Terrible experience. The fit is unreliable and customer support wasn't helpful. It could have been cheaper, but overall it's okay.",4
+R0140,P004,Fantastic quality for the price. The Haven feels premium and charging speed works flawlessly. Customer support experience was fine overall.,5
+R0141,P004,"The Haven exceeded all my expectations. The material quality is amazing and battery lasts really long. After using it for two weeks, I can say it holds up well.",5
+R0142,P004,Would not recommend this Haven. It broke sooner than expected and caused a lot of frustration. Delivery was fast and packaging was neat.,1
+R0143,P004,The Haven exceeded all my expectations. The battery life is amazing and battery lasts really long. I appreciate the modern design and easy setup.,5
+R0144,P004,"An average experience overall. The brightness could use some improvement, but it's acceptable. Customer support experience was fine overall.",5
+R0145,P004,"The Haven exceeded all my expectations. The sound quality is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",4
+R0146,P004,"I was really disappointed with this Haven. The design stopped working after a few days. It could have been cheaper, but overall it's okay.",3
+R0147,P004,"This Haven works fine, but I wish the material quality was a bit better. I appreciate the modern design and easy setup.",5
+R0148,P004,Poor build quality. The Haven feels cheap and doesn't justify its price at all. I appreciate the modern design and easy setup.,4
+R0149,P004,"This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. It could have been cheaper, but overall it's okay.",5
+R0150,P004,"This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. After using it for two weeks, I can say it holds up well.",5
+R0151,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. Customer support experience was fine overall.,5
+R0152,P004,"Extremely poor performance. The Haven overheats and doesn't last long. After using it for two weeks, I can say it holds up well.",2
+R0153,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. Delivery was fast and packaging was neat.,5
+R0154,P004,This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. Delivery was fast and packaging was neat.,5
+R0155,P004,"The Haven exceeded all my expectations. The comfort is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",5
+R0156,P004,Fantastic quality for the price. The Haven feels premium and battery life works flawlessly. Delivery was fast and packaging was neat.,5
+R0157,P004,I absolutely love this Haven! The brightness is outstanding and it performs even better than expected. Delivery was fast and packaging was neat.,5
+R0158,P004,This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0159,P004,"An average experience overall. The material quality could use some improvement, but it's acceptable. Customer support experience was fine overall.",5
+R0160,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. I appreciate the modern design and easy setup.,5
+R0161,P004,"Neither great nor terrible. The Haven performs as advertised. It could have been cheaper, but overall it's okay.",3
+R0162,P004,This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0163,P004,"The Haven is okay, nothing too special. It does what it's supposed to do. Delivery was fast and packaging was neat.",4
+R0164,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. I appreciate the modern design and easy setup.,5
+R0165,P004,"I absolutely love this Haven! The design is outstanding and it performs even better than expected. After using it for two weeks, I can say it holds up well.",5
+R0166,P004,"The Haven is okay, nothing too special. It does what it's supposed to do. Customer support experience was fine overall.",4
+R0167,P004,"Fantastic quality for the price. The Haven feels premium and sound quality works flawlessly. It could have been cheaper, but overall it's okay.",5
+R0168,P004,"This Haven works fine, but I wish the fit was a bit better. Delivery was fast and packaging was neat.",5
+R0169,P004,"Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. After using it for two weeks, I can say it holds up well.",5
+R0170,P004,"Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. It could have been cheaper, but overall it's okay.",4
+R0171,P004,Highly recommend this Haven to anyone looking for something reliable and stylish. Totally worth the money. Delivery was fast and packaging was neat.,5
+R0172,P004,This Haven has become one of my favorite purchases this year. I use it daily and it never disappoints. Delivery was fast and packaging was neat.,5
+R0173,P005,"This Keystone works fine, but I wish the fit was a bit better. Customer support experience was fine overall.",5
+R0174,P005,"It's a decent Keystone for the price. Nothing extraordinary, but it gets the job done. It could have been cheaper, but overall it's okay.",4
+R0175,P005,Poor build quality. The Keystone feels cheap and doesn't justify its price at all. Customer support experience was fine overall.,3
+R0176,P005,"Would not recommend this Keystone. It broke sooner than expected and caused a lot of frustration. It could have been cheaper, but overall it's okay.",2
+R0177,P005,Poor build quality. The Keystone feels cheap and doesn't justify its price at all. Customer support experience was fine overall.,3
+R0178,P005,I absolutely love this Keystone! The durability is outstanding and it performs even better than expected. I appreciate the modern design and easy setup.,5
+R0179,P005,"An average experience overall. The material quality could use some improvement, but it's acceptable. After using it for two weeks, I can say it holds up well.",5
+R0180,P005,"An average experience overall. The sound quality could use some improvement, but it's acceptable. Delivery was fast and packaging was neat.",5
+R0181,P005,"The Keystone exceeded all my expectations. The charging speed is amazing and battery lasts really long. It could have been cheaper, but overall it's okay.",4
+R0182,P005,Neither great nor terrible. The Keystone performs as advertised. I appreciate the modern design and easy setup.,3
+R0183,P005,"An average experience overall. The battery life could use some improvement, but it's acceptable. It could have been cheaper, but overall it's okay.",5
+R0184,P005,"It's a decent Keystone for the price. Nothing extraordinary, but it gets the job done. Delivery was fast and packaging was neat.",5
+R0185,P005,Neither great nor terrible. The Keystone performs as advertised. Customer support experience was fine overall.,2
+R0186,P005,"The Keystone is okay, nothing too special. It does what it's supposed to do. I appreciate the modern design and easy setup.",5
+R0187,P005,"The Keystone is okay, nothing too special. It does what it's supposed to do. Customer support experience was fine overall.",4
+R0188,P005,I absolutely love this Keystone! The battery life is outstanding and it performs even better than expected. Delivery was fast and packaging was neat.,5
+R0189,P005,"Poor build quality. The Keystone feels cheap and doesn't justify its price at all. After using it for two weeks, I can say it holds up well.",2
+R0190,P005,Terrible experience. The display is unreliable and customer support wasn't helpful. I appreciate the modern design and easy setup.,2
+R0191,P005,The Keystone exceeded all my expectations. The material quality is amazing and battery lasts really long. Delivery was fast and packaging was neat.,5
+R0192,P005,Fantastic quality for the price. The Keystone feels premium and charging speed works flawlessly. Customer support experience was fine overall.,5
+R0193,P005,"I absolutely love this Keystone! The fit is outstanding and it performs even better than expected. It could have been cheaper, but overall it's okay.",5
+R0194,P005,"It's a decent Keystone for the price. Nothing extraordinary, but it gets the job done. Delivery was fast and packaging was neat.",5
+R0195,P005,Would not recommend this Keystone. It broke sooner than expected and caused a lot of frustration. I appreciate the modern design and easy setup.,2
+R0196,P005,"Neither great nor terrible. The Keystone performs as advertised. After using it for two weeks, I can say it holds up well.",2
+R0197,P005,"Extremely poor performance. The Keystone overheats and doesn't last long. After using it for two weeks, I can say it holds up well.",2
+R0198,P005,"Neither great nor terrible. The Keystone performs as advertised. It could have been cheaper, but overall it's okay.",3
+R0199,P005,This Keystone has become one of my favorite purchases this year. I use it daily and it never disappoints. Customer support experience was fine overall.,4
+R0200,P005,"The Keystone is okay, nothing too special. It does what it's supposed to do. I appreciate the modern design and easy setup.",5
+R0201,P005,I absolutely love this Keystone! The design is outstanding and it performs even better than expected. I appreciate the modern design and easy setup.,5
+R0202,P005,"This Keystone works fine, but I wish the display was a bit better. After using it for two weeks, I can say it holds up well.",5
+R0203,P005,"It's a decent Keystone for the price. Nothing extraordinary, but it gets the job done. After using it for two weeks, I can say it holds up well.",4
+R0204,P005,"This Keystone has become one of my favorite purchases this year. I use it daily and it never disappoints. After using it for two weeks, I can say it holds up well.",5
+R0205,P005,"Poor build quality. The Keystone feels cheap and doesn't justify its price at all. After using it for two weeks, I can say it holds up well.",2
+R0206,P005,Neither great nor terrible. The Keystone performs as advertised. I appreciate the modern design and easy setup.,3
+R0207,P005,Neither great nor terrible. The Keystone performs as advertised. Delivery was fast and packaging was neat.,2
+R0208,P006,The earbuds stopped working properly after a few days. One side just went silent while the other started producing a weird static noise. Really poor quality and not worth the money.,1
+R0209,P006,"I had high hopes for these, but the sound keeps cutting out every few minutes. The connection is unstable and the audio lags when watching videos. Very disappointing experience overall.",1
+R0210,P006,"The charging case feels cheap and fragile. After a week of use, the lid doesn’t close properly anymore. Wouldn’t recommend this product to anyone.",4
+R0211,P006,One earbud died completely after just two uses. Tried all the troubleshooting steps but nothing worked. Waste of money.,4
+R0212,P006,These earbuds constantly disconnect even when my phone is right next to me. The Bluetooth connection is extremely unreliable.,3
+R0213,P006,Sound quality is below average with no bass at all. Feels like listening through a tin can. Expected better from something advertised as premium.,4
+R0214,P006,The battery lasts barely two hours on a full charge. Totally unacceptable for the price point.,2
+R0215,P006,"Uncomfortable fit, hurts my ears after a short time. Tried all the ear tips provided but none made a difference.",2
+R0216,P006,Touch controls are overly sensitive and keep pausing or skipping songs whenever I adjust them. Really frustrating to use.,2
+R0217,P006,Noise cancellation is practically non-existent. I can hear every sound around me even at high volume.,3
+R0218,P006,The microphone quality is terrible. People on calls keep saying I sound muffled or far away.,2
+R0219,P006,"After a few weeks, they refuse to pair automatically. I have to reconnect manually every single time.",2
+R0220,P006,One of the earbuds randomly disconnects and doesn’t reconnect until I reset the whole device. Annoying and time-consuming.,2
+R0221,P006,The charging case stopped working within a month. The earbuds don’t charge anymore and customer support is useless.,2
+R0222,P006,Audio is out of sync when watching videos. There’s always a delay between what I see and hear.,2
+R0223,P006,The earbuds arrived with scratches and dust on them. Seems like a used or refurbished item sold as new.,4
+R0224,P006,Left earbud volume is noticeably lower than the right. Makes listening uncomfortable and unbalanced.,2
+R0225,P006,They keep falling out no matter what tips I use. Definitely not suitable for workouts or even walking.,4
+R0226,P006,Battery indicator is inaccurate. It shows 80% and then suddenly shuts down. Very misleading.,2
+R0227,P006,The plastic build feels cheap and flimsy. Doesn’t justify the cost at all.,3
+R0228,P006,The charging cable stopped working after two days. Had to buy a new one just to keep using the case.,2
+R0229,P006,Sometimes the audio just stops for no reason and resumes a few seconds later. Completely ruins the listening experience.,1
+R0230,P006,Advertised as noise-cancelling but it does absolutely nothing. Even budget earphones do better.,4
+R0231,P006,"Case LEDs don’t light up properly, so I can’t tell if it’s charging or not.",3
+R0232,P006,The earbuds overheat after a few minutes of playback. Not safe to use for long sessions.,2
+R0233,P006,Poorly designed touch controls that make it difficult to use without triggering random actions.,2
+R0234,P006,The right earbud doesn’t fit in the charging slot properly. It just sits loose and doesn’t charge half the time.,3
+R0235,P006,They automatically disconnect if I open another app. Very unstable Bluetooth performance.,2
+R0236,P006,There’s a constant low hum in the background during playback. Super annoying after a while.,3
+R0237,P006,Sound gets distorted at even medium volume. Not enjoyable at all for music.,1
+R0238,P006,Packaging was poorly done and the box was damaged when it arrived.,2
+R0239,P006,I regret buying these. Should’ve read the reviews before wasting money on such low quality.,1
+R0240,P006,Charging takes forever and doesn’t last long once unplugged. Terrible battery management.,2
+R0242,P006,Decent for calls but not for music. The sound feels flat and uninspired.,3
+R0246,P006,Looks stylish and lightweight but doesn’t live up to performance expectations.,3
+R0241,P006,"The earbuds are okay for basic listening, but the audio lacks clarity. For the price, there are better options available.",5
+R0248,P006,"Usable for casual use, but I wouldn’t recommend for serious listeners.",4
