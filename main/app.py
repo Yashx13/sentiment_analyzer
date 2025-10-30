@@ -6,146 +6,263 @@ import numpy as np
 
 import analyzer as az
 
-
 st.set_page_config(layout="wide", page_title="Sentiment Analyzer")
-
 
 # Load data
 products, reviews = az.load_data()
 analyzer = az.get_analyzer()
 
 
-st.title("🧠 Product Sentiment Analyzer")
+# A Boilerplate done for *side-by-side* Comparison toggle 
+# it is done with different UI settings
+class ProductAnalyzer:
+    def __init__(self, products, reviews, analyzer, label, key_suffix):
+        self.products = products
+        self.reviews = reviews
+        self.analyzer = analyzer
+        self.label = label
+        self.key_suffix = key_suffix
+    
+    def render(self):
+        st.subheader(f"📦 Product {self.label}")
+        
+        product_list = ["Select a product..."] + self.products["title"].tolist()
+        product_choice = st.selectbox(
+            f"Choose a product ({self.label})", 
+            product_list, 
+            index=0,
+            key=f"product_select_{self.key_suffix}"
+        )
+        
+        if product_choice == "Select a product...":
+            st.info("👆 Please select a product.")
+            return
+        
+        product_row = self.products[self.products["title"] == product_choice].iloc[0]
+        pid = product_row["product_id"]
+        
+        prod_reviews = self.reviews[self.reviews["product_id"] == pid].copy()
+        
+        if len(prod_reviews) == 0:
+            st.warning("No reviews found for this product.")
+            return
+        
+        if "rating" not in prod_reviews.columns:
+            st.warning("⚠️ Ratings column not found in CSV.")
+            return
+        
+        with st.spinner("Analyzing reviews..."):
+            prod_reviews["scores"] = prod_reviews["review_text"].apply(self.analyzer.polarity_scores)
+            prod_reviews["compound"] = prod_reviews["scores"].apply(lambda x: x["compound"])
+            prod_reviews["label"] = prod_reviews["compound"].apply(
+                lambda c: "Positive" if c >= 0.05 else ("Negative" if c <= -0.05 else "Neutral") 
+            )
+        
+        counts = prod_reviews["label"].value_counts().reindex(["Positive", "Neutral", "Negative"]).fillna(0).astype(int)
+        total_reviews = len(prod_reviews)
+        percentages = (counts / total_reviews * 100).round(1)
+        avg_score = prod_reviews["compound"].mean()
+        avg_rating = prod_reviews["rating"].mean()
+        
+        if avg_score >= 0.4:
+            sentiment_summary = "🟢 **Very Positive**"
+        elif avg_score >= 0.1:
+            sentiment_summary = "🟡 **Positive/Mixed**"
+        elif avg_score > -0.05:
+            sentiment_summary = "⚪ **Neutral**"
+        else:
+            sentiment_summary = "🔴 **Negative**"
+        
+        # Product Info
+        st.write(f"**Product:** {product_row['title']}")
+        st.write(f"**Price:** ${product_row['price']:.2f}")
+        st.metric("Average Rating", f"{avg_rating:.2f}/5.0", f"{'⭐' * int(round(avg_rating))}")
+        
+        st.divider()
+        
+        # Metrics
+        st.metric("Total Reviews", f"{total_reviews}")
+        st.metric("Sentiment Score", f"{avg_score:.3f}")
+        st.markdown(sentiment_summary)
+        
+        st.markdown("**Breakdown:**")
+        st.write(f"🟢 Positive: {counts['Positive']} ({percentages['Positive']}%)")
+        st.write(f"⚪ Neutral: {counts['Neutral']} ({percentages['Neutral']}%)")
+        st.write(f"🔴 Negative: {counts['Negative']} ({percentages['Negative']}%)")
+        
+        # Chart
+        fig, ax = plt.subplots(figsize=(6, 4))
+        bars = ax.bar(counts.index, counts.values, color=["#4CAF50", "#9E9E9E", "#F44336"], width=0.6)
+        ax.set_title("Sentiment Distribution", fontsize=12, fontweight='bold')
+        ax.set_ylabel("Review Count", fontsize=10)
+        ax.set_xlabel("Sentiment", fontsize=10)
+        ax.grid(axis='y', alpha=0.3)
+        
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height,
+                    f'{int(height)}',
+                    ha='center', va='bottom', fontsize=10, fontweight='bold')
+        
+        plt.tight_layout()
+        st.pyplot(fig)
+        
+        st.divider()
+        
+        # Sample Reviews
+        st.markdown("**Sample Reviews:**")
+        sample_size = min(5, len(prod_reviews))
+        sample_reviews = prod_reviews.sample(sample_size)
+        sample_reviews["stars"] = sample_reviews["rating"].apply(lambda x: "⭐" * int(x))
+        
+        display_df = sample_reviews[["review_text", "stars", "label", "compound"]].reset_index(drop=True)
+        display_df.columns = ["Review Text", "Rating", "Sentiment", "Score"]
+        
+        st.dataframe(
+            display_df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Review Text": st.column_config.TextColumn(width="large"),
+                "Score": st.column_config.NumberColumn(format="%.3f"),
+            }
+        )
+        
+
+# Main UI
+st.title("Sentiment Analyzer")
 st.markdown("""
 Analyze customer sentiment for different products based on real reviews.
-Select a product below to begin.
 """)
 
+# Comparison Mode Toggle
+compare_mode = st.checkbox("🔀 Enable Side-by-Side Comparison", value=False)
 
-product_list = ["Select a product..."] + products["title"].tolist()
-product_choice = st.selectbox("Choose a product", product_list, index=0)
-
-if product_choice == "Select a product...":
-    st.info("👆 Please select a product from the dropdown above to view sentiment analysis.")
-    st.stop()
-
-
-product_row = products[products["title"] == product_choice].iloc[0]
-pid = product_row["product_id"]
-
-
-prod_reviews = reviews[reviews["product_id"] == pid].copy()
-
-if len(prod_reviews) == 0:
-    st.warning("No reviews found for this product.")
-    st.stop()
-
-
-if "rating" not in prod_reviews.columns:
-    st.warning("⚠️ Ratings column not found in CSV. Please add a 'rating' column with values 1-5.")
-    st.stop()
-
-
-with st.spinner("Analyzing reviews..."):
-    prod_reviews["scores"] = prod_reviews["review_text"].apply(analyzer.polarity_scores)
-    prod_reviews["compound"] = prod_reviews["scores"].apply(lambda x: x["compound"])
+if compare_mode:
+    st.markdown("---")
+    st.header("📊 Side-by-Side Product Comparison")
+    col1, col2 = st.columns(2)
     
-    # Create sentiment label
-    prod_reviews["label"] = prod_reviews["compound"].apply(
-        lambda c: "Positive" if c >= 0.05 else ("Negative" if c <= -0.05 else "Neutral")
-    )
-
-
-counts = prod_reviews["label"].value_counts().reindex(["Positive", "Neutral", "Negative"]).fillna(0).astype(int)
-total_reviews = len(prod_reviews)
-percentages = (counts / total_reviews * 100).round(1)
-avg_score = prod_reviews["compound"].mean()
-avg_rating = prod_reviews["rating"].mean()
-
-
-if avg_score >= 0.4:
-    sentiment_summary = "### 🟢 **Overall Sentiment: Very Positive** — Most users loved this product."
-    sentiment_color = "green"
-elif avg_score >= 0.1:
-    sentiment_summary = "### 🟡 **Overall Sentiment: Generally Positive / Mixed** — Users found it good overall with a few issues."
-    sentiment_color = "orange"
-elif avg_score > -0.05:
-    sentiment_summary = "### ⚪ **Overall Sentiment: Neutral / Mixed** — Balanced opinions."
-    sentiment_color = "gray"
+    with col1:
+        analyzer1 = ProductAnalyzer(products, reviews, analyzer, "A", "left")
+        analyzer1.render()
+    
+    with col2:
+        analyzer2 = ProductAnalyzer(products, reviews, analyzer, "B", "right")
+        analyzer2.render()
 else:
-    sentiment_summary = "### 🔴 **Overall Sentiment: Negative / Bad Reviews** — Many users were dissatisfied."
-    sentiment_color = "red"
-
-
-st.subheader("Product Information")
-col_info1, col_info2 = st.columns([2, 1])
-with col_info1:
-    st.write(f"**Product:** {product_row['title']}")
-    st.write(f"**Price:** ${product_row['price']:.2f}")
-with col_info2:
-    st.metric("Average Rating", f"{'⭐' * int(round(avg_rating))}", f"{avg_rating:.2f}/5.0")
-
-st.divider()
-
-
-st.subheader("📊 Sentiment Summary")
-
-col1, col2 = st.columns([1, 1])
-
-with col1:
-    st.metric("Total Reviews", f"{total_reviews}")
-    st.metric("Avg Sentiment Score", f"{avg_score:.3f}")
-    st.markdown("**Breakdown:**")
-    st.write(f"🟢 Positive: {counts['Positive']} ({percentages['Positive']}%)")
-    st.write(f"⚪ Neutral: {counts['Neutral']} ({percentages['Neutral']}%)")
-    st.write(f"🔴 Negative: {counts['Negative']} ({percentages['Negative']}%)")
-
-with col2:
-
-    fig, ax = plt.subplots(figsize=(6, 4))
-    bars = ax.bar(counts.index, counts.values, color=["#4CAF50", "#9E9E9E", "#F44336"], width=0.6)
-    ax.set_title("Sentiment Distribution", fontsize=12, fontweight='bold')
-    ax.set_ylabel("Review Count", fontsize=10)
-    ax.set_xlabel("Sentiment", fontsize=10)
-    ax.tick_params(axis='x', labelsize=10)
-    ax.tick_params(axis='y', labelsize=9)
-    ax.grid(axis='y', alpha=0.3)
+    st.markdown("---")
     
-
-    for bar in bars:
-        height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2., height,
-                f'{int(height)}',
-                ha='center', va='bottom', fontsize=10, fontweight='bold')
+    product_list = ["Select a product..."] + products["title"].tolist()
+    product_choice = st.selectbox("Choose a product", product_list, index=0)
     
-    plt.tight_layout()
-    st.pyplot(fig)
-
-st.divider()
-
-st.markdown(sentiment_summary)
-
-st.divider()
-
-st.subheader("💬 Sample Reviews")
-
-sample_size = min(8, len(prod_reviews))
-sample_reviews = prod_reviews.sample(sample_size)
-
-
-sample_reviews["stars"] = sample_reviews["rating"].apply(lambda x: "⭐" * int(x))
-
-
-display_df = sample_reviews[["review_id", "review_text", "stars", "label", "compound"]].reset_index(drop=True)
-display_df.columns = ["Review ID", "Review Text", "Rating", "Sentiment", "Score"]
-
-
-st.dataframe(
-    display_df,
-    use_container_width=True,
-    hide_index=True,
-    column_config={
-        "Review Text": st.column_config.TextColumn(width="large"),
-        "Score": st.column_config.NumberColumn(format="%.3f"),
-    }
-)
+    if product_choice == "Select a product...":
+        st.info("👆 Please select a product from the dropdown above to view sentiment analysis.")
+        st.stop()
+    
+    product_row = products[products["title"] == product_choice].iloc[0]
+    pid = product_row["product_id"]
+    
+    prod_reviews = reviews[reviews["product_id"] == pid].copy()
+    
+    if len(prod_reviews) == 0:
+        st.warning("No reviews found for this product.")
+        st.stop()
+    
+    if "rating" not in prod_reviews.columns:
+        st.warning("⚠️ Ratings column not found in CSV. Please add a 'rating' column with values 1-5.")
+        st.stop()
+    
+    with st.spinner("Analyzing reviews..."):
+        prod_reviews["scores"] = prod_reviews["review_text"].apply(analyzer.polarity_scores)
+        prod_reviews["compound"] = prod_reviews["scores"].apply(lambda x: x["compound"])
+        
+        prod_reviews["label"] = prod_reviews["compound"].apply(
+            lambda c: "Positive" if c >= 0.05 else ("Negative" if c <= -0.05 else "Neutral") 
+        )
+    
+    counts = prod_reviews["label"].value_counts().reindex(["Positive", "Neutral", "Negative"]).fillna(0).astype(int)
+    total_reviews = len(prod_reviews)
+    percentages = (counts / total_reviews * 100).round(1)
+    avg_score = prod_reviews["compound"].mean()
+    avg_rating = prod_reviews["rating"].mean()
+    
+    if avg_score >= 0.4:
+        sentiment_summary = "### 🟢 **Overall Sentiment: Very Positive** — Most users loved this product."
+        sentiment_color = "green"
+    elif avg_score >= 0.1:
+        sentiment_summary = "### 🟡 **Overall Sentiment: Generally Positive / Mixed** — Users found it good overall with a few issues."
+        sentiment_color = "orange"
+    elif avg_score > -0.05:
+        sentiment_summary = "### ⚪ **Overall Sentiment: Neutral / Mixed** — Balanced opinions."
+        sentiment_color = "gray"
+    else:
+        sentiment_summary = "### 🔴 **Overall Sentiment: Negative / Bad Reviews** — Many users were dissatisfied."
+        sentiment_color = "red"
+    
+    st.subheader("Product Information")
+    col_info1, col_info2 = st.columns([2, 1])
+    with col_info1:
+        st.write(f"**Product:** {product_row['title']}")
+        st.write(f"**Price:** ${product_row['price']:.2f}")
+    with col_info2:
+        st.metric("Average Rating", f"{'⭐' * int(round(avg_rating))}", f"{avg_rating:.2f}/5.0")
+    
+    st.divider()
+    
+    st.subheader("📊 Sentiment Summary")
+    
+    col1, col2 = st.columns([1, 1])
+    
+    with col1:
+        st.metric("Total Reviews", f"{total_reviews}")
+        st.metric("Avg Sentiment Score", f"{avg_score:.3f}")
+        st.markdown("**Breakdown:**")
+        st.write(f"🟢 Positive: {counts['Positive']} ({percentages['Positive']}%)")
+        st.write(f"⚪ Neutral: {counts['Neutral']} ({percentages['Neutral']}%)")
+        st.write(f"🔴 Negative: {counts['Negative']} ({percentages['Negative']}%)")
+    
+    with col2:
+        fig, ax = plt.subplots(figsize=(6, 4))
+        bars = ax.bar(counts.index, counts.values, color=["#4CAF50", "#9E9E9E", "#F44336"], width=0.6)
+        ax.set_title("Sentiment Distribution", fontsize=12, fontweight='bold')
+        ax.set_ylabel("Review Count", fontsize=10)
+        ax.set_xlabel("Sentiment", fontsize=10)
+        ax.tick_params(axis='x', labelsize=10)
+        ax.tick_params(axis='y', labelsize=9)
+        ax.grid(axis='y', alpha=0.3)
+        
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height,
+                    f'{int(height)}',
+                    ha='center', va='bottom', fontsize=10, fontweight='bold')
+        
+        plt.tight_layout()
+        st.pyplot(fig)
+    
+    st.divider()
+    
+    st.markdown(sentiment_summary)
+    
+    st.divider()
+    
+    st.subheader("💬 Sample Reviews")
+    
+    sample_size = min(8, len(prod_reviews))
+    sample_reviews = prod_reviews.sample(sample_size)
+    
+    sample_reviews["stars"] = sample_reviews["rating"].apply(lambda x: "⭐" * int(x))
+    
+    display_df = sample_reviews[["review_id", "review_text", "stars", "label", "compound"]].reset_index(drop=True)
+    display_df.columns = ["Review ID", "Review Text", "Rating", "Sentiment", "Score"]
+    
+    st.dataframe(
+        display_df,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Review Text": st.column_config.TextColumn(width="large"),
+            "Score": st.column_config.NumberColumn(format="%.3f"),
+        }
+    )
