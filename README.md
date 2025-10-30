@@ -47,6 +47,20 @@ source .psenv/bin/activate
 ```
 This will open the application in your browser at `https://localhost:8501`
 
++ **Csv Structure**
+
+     We can also have customized csv depend on `API` fetches to a csv which will be better for pre processing 
+
+`product_reviews.csv`
+```
+    review_id, product_id, review_text, rating
+```
+
+`products.csv`
+```
+    product_id, title, price
+```
+
 ## 📁 Project Structure
 ```
 sentiment_analyzer/
