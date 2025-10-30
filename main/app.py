@@ -7,7 +7,7 @@ import numpy as np
 import analyzer as az
 
 
-st.set_page_config(layout="wide", page_title="Product Sentiment Analyzer")
+st.set_page_config(layout="wide", page_title="Sentiment Analyzer")
 
 
 # Load data
